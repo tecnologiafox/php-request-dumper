@@ -1,0 +1,11 @@
+{
+    "name": "tecnologiafox/php-request-dumper",
+    "require": {
+        "php-di/php-di": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TecnologiaFox\\PhpRequestDumper\\": "src"
+        }
+    }
+}
