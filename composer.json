@@ -1,7 +1,7 @@
 {
     "name": "tecnologiafox/php-request-dumper",
     "require": {
-        "php-di/php-di": "^6.0"
+        "php-di/php-di": "^5.4"
     },
     "autoload": {
         "psr-4": {
