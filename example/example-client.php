@@ -1,6 +1,6 @@
 <?php
 
-require "vendor" . DIRECTORY_SEPARATOR . "autoload.php";
+require dirname(__DIR__) . DIRECTORY_SEPARATOR . "vendor" . DIRECTORY_SEPARATOR . "autoload.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $dumper = new \TecnologiaFox\PhpRequestDumper\PhpRequestDumper();
