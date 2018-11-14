@@ -19,10 +19,10 @@ class Core
             $random = md5($filename);
             $encoded = base64_encode(file_get_contents($file['tmp_name']));
             $cmd[] = "(echo \"$encoded\" | base64 -d) > $random";
-            $args[] = "-F \"$filename=@$random\"";
+            $args[] = "-F '$filename=@$random'";
         }
         foreach ($_POST as $key => $post) {
-            $args[] = "-F \"$key=$post\"";
+            $args[] = "-F '$key=$post'";
         }
         $cmd[] = "curl";
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
